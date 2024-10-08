@@ -1,0 +1,213 @@
+Que1. Explain the role of operators in javascript. Why are they essential in programming?
+Ans.In JavaScript, operators are symbols used to perform operations on variables, values, or expressions. They are essential in programming because they enable developers to:
+
+1. Perform arithmetic and mathematical calculations
+2. Compare values and make decisions
+4. Manipulate strings and arrays
+5. Perform logical operations
+
+JavaScript has various types of operators, including:
+
+1. Arithmetic operators (+, -, *, /, %)
+2. Comparison operators (==, !=, ===, !==, >, <, >=, <=)
+3. Logical operators (&&, ||, !)
+4. Assignment operators (=, +=, -=, *=, /=, %=)
+5. Ternary operator (?: for conditional expressions)
+6. Bitwise operators (&, |, ^, ~, <<, >>)
+
+Operators are crucial because they allow developers to write expressive code, making it easier to:
+
+- Perform complex calculations
+- Improve code readability
+
+
+Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for each category.
+
+ans..Javascript operators are categorised in multiple forms based on their functionality such as.
+1. Arithmetic Operators: Perform mathematical calculations
+    - Addition (+): 2 + 3
+    - Subtraction (-): 2 - 3
+    - Multiplication (*): 2 * 3
+    - Division (/): 10 / 2
+    - Modulus (%): 17 % 5
+    - Exponentiation (**): 2 ** 3
+
+2. Comparison Operators: Compare values and return a boolean result
+    - Equal (==): 5 == 5
+    - Not Equal (!=): 5 != 3
+    - Strict Equal (===): 5 === 5
+    - Strict Not Equal (!==): 5 !== 3
+    - Greater Than (>): 5 > 3
+    - Less Than (<): 3 < 5
+    - Greater Than or Equal (>=): 5 >= 5
+    - Less Than or Equal (<=): 3 <= 5
+
+3. Logical Operators: Combine boolean values or expressions
+    - Logical And (&&): true && false
+    - Logical Or (||): true || false
+    - Logical Not (!): !true
+
+4. Assignment Operators: Assign values to variables
+    - Assign (=): x = 5
+    - Add and Assign (+=): x += 3
+    - Subtract and Assign (-=): x -= 2
+    - Multiply and Assign (*=): x *= 4
+    - Divide and Assign (/=): x /= 2
+    - Modulus and Assign (%=): x %= 3
+
+5. Bitwise Operators: Perform operations on binary numbers
+    - Bitwise And (&): 5 & 3
+    - Bitwise Or (|): 5 | 3
+    
+
+6. String Operators: Concatenate strings
+    - Addition (+): 'Hello ' + 'World'
+
+7. Ternary Operator: Conditional expression
+    - condition ? trueValue : falseValue
+
+8. Unary Operators: Perform operations on a single value
+    - Increment (++): x++
+    - Decrement (--): x--
+    - Plus (+): +x
+    - Minus (-): -x
+    - Logical Not (!): !x
+    - Bitwise Not (~): ~x
+    - Type of : typeof x
+    
+.
+Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+Ans. the different between unary , binary and ternary operators in javascript such as follow,
+
+Unary operator : this operator applies to single value or expressions.
+       
+    - Increment (++):  ++x
+    - Decrement (--):  --x
+    - Plus (+): +x (converts to number)
+    - Minus (-): -x (negates the value)
+    - Logical Not (!): !x (negates the boolean value)
+    - Bitwise Not (~): ~x (flips the bits)
+    - Typeof: typeof x (returns the type of x)
+  
+
+Binary Operators
+
+- Operate on two values or expressions
+- Typically infix (between the operands)
+- Examples:
+    - Arithmetic: x + y, x - y, x * y, x / y, x % y
+    - Comparison: x == y, x != y, x === y, x !== y, x > y, x < y, x >= y, x <= y
+    - Logical: x && y, x || y
+    - Bitwise: x & y, x | y, x ^ y, x << y, x >> y
+    - Assignment: x = y, x += y, x -= y, x *= y, x /= y, x %= y
+
+Ternary Operator
+
+- Operates on three values or expressions
+- Also known as the conditional operator
+- Syntax: condition ? trueValue : falseValue
+- Example: x > 5 ? 'x is greater than 5' : 'x is less than or equal to 5'
+
+
+
+Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
+Ans.  The precedence and associativity of operators in javascript depend on how to set them in order. 
+The precedence is defined as the order in which operators are evaluated with the multiple operators. Some of the operators we use in expressions such as follow.
+1. Parentheses ()
+2. Exponentiation (**)
+3. Unary operators (+, -, !, )
+4. Multiplication and Division (*, /, %)
+5. Addition and Subtraction (+, -)
+6. Comparison operators (<, >, <=, >=, ==, !=, ===, )
+7. Logical operators (&&, ||)
+8. Assignment operators (=, +=, -=)
+
+The associativity is defined as the order in which operators are evaluated with the same precedence operators. Such as left associativity (left-right).  And right associativity (right- to).
+Left associativity : (+,-,/,* )
+Right associativity : (=, +=, -=)
+
+Understanding these concepts are important such as:-
+      Readability : this concept reduces the mistake so we can write essential code using these             concepts. 
+     Predictable code behavior: Understanding precedence and associativity ensures your code   behaves as expected, reducing errors and unexpected results.
+           
+Q5. Write a JavaScript program that calculates the simple interest using the formula Simple interest = (principal * rate * time) / 100.
+Ans. here is the javascript program that calculate simple interest : 
+
+// function to calculate simple interest 
+function calculatedSimpleInterest(principal, rate, time) {
+    
+let simpleInterestFormula = (principal * rate * time ) / 100
+
+// return the value ,
+return simpleInterestFormula;
+}
+
+// let the user enter value of principle , rate and time:
+let principal = prompt(" Enter the value in number :" );
+let rate = prompt(" Enter the value in % : ");
+let time = prompt( "Enter the value in year :");
+
+// call the function of simple interest : 
+let simpleInterest =  calculatedSimpleInterest(principal, rate, time);
+
+// display the result
+alert(simpleInterest);
+
+
+
+Q6. Write a Javascript program to calculate the Body Mass Index (BMI) using the formula 
+BMI = weight (kg)/height * height.
+Ans.  Here is the javascript program to calculate body mass index.
+// function to calculate BMI
+function calculatedBodyMassIndex(weight,height){
+ 
+// formula of bmi
+let formulaBmi = weight/height * height ;
+
+// return the value,
+return formulaBmi;
+};
+// let user get enter the value,
+
+let weight = prompt(" Enter the value of weight in kg":  );
+let height =prompt(" Enter the value of height ": );
+
+// call the function of BMI : 
+
+ let callBmi = calculatedBodyMassIndex(weight,height);
+
+
+// display the result 
+alert(callBmi);
+
+
+Q7. Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate arithmetic operators.
+Ans. 
+//Here is the javascript program to calculate the area of a circle.
+// define the radius of the circle
+let radius = 10;
+
+// calculate the area of circle of using formula : πr^2
+let areaOfCircle = Math.PI * (radius ** 2);
+
+// Display the result
+console.log("The area of the circle is: " + areaOfCircle.toFixed(2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
